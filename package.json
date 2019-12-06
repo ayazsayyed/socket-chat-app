@@ -2,11 +2,16 @@
   "name": "socket-chat-example",
   "version": "0.0.1",
   "description": "my first socket.io app",
+  "private": true,
+  "homepage": "https://ayazsayyed.github.io/socket-chat-app",
   "dependencies": {
     "express": "^4.15.2",
+    "gh-pages": "^2.1.1",
     "socket.io": "^1.7.3"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "predeploy":"npm run start",
+    "deploy" :"gh-pages -d start"
   }
 }
